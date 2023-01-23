@@ -31,6 +31,9 @@ transition: opacity 0.4s ease;
   .logo-link:active {
     opacity: 0.6;
   }
+  .logo-link img {
+    display: block;
+  }
 
   .site-header-actions {
     display: flex;
