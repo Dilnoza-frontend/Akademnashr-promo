@@ -43,6 +43,16 @@ transition: opacity 0.4s ease;
  list-style: none;
  display: flex;
  padding: 0;
+ margin: 0;
+ margin-right: 32px;
+}
+
+.sitenav-item {
+margin-right: 32px;
+}
+
+.sitenav-item:last-child {
+  margin-right: 0;
 }
 
 .sitenav-link{
@@ -106,13 +116,23 @@ transition: color 0.4s ease, opacity 0.4 ease;
   height: 3px;
   border: 0;
   background-color: #ff7500;
+  margin: 0;
+  margin-bottom: 40px;
   }
 
-  .hero-heading{
+  .hero-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
     font-size: 40px;
     line-height: 1.2;
     font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
     }
+
+  .hero-text {
+    margin-top: 0;
+    margin-bottom: 32px;
+
+  }
 
  .hero-img{
   width: 510px;
@@ -131,14 +151,16 @@ transition: color 0.4s ease, opacity 0.4 ease;
 .features-list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 
 .features-heading {
   width: 440px;
-  font-style: 72px;
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 72px;
   line-height: 1.2;
   letter-spacing: 0.5px;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
@@ -147,6 +169,11 @@ transition: color 0.4s ease, opacity 0.4 ease;
 /* FEATURE */
 .feature {
   width: 340px;
+  margin-right: 40px;
+}
+
+.feature:last-child {
+  margin-right: 0;
 }
 
 .feature-icon-wrapper {
@@ -178,14 +205,26 @@ transition: color 0.4s ease, opacity 0.4 ease;
   width: 440px;
 }
 .promo-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
-.promo-text {
-  font-size: 16px;
-  line-height: 1.5;
+
+.promo-info-wrapper {
+  margin-bottom: 24px;
 }
+
+.promo-text {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.promo-text:last-child {
+  margin-bottom: 0;
+}
+
 .promo-highlight {
   color: #FF7500;
 }
@@ -217,6 +256,15 @@ justify-content: space-between;
 .site-footer-socials {
 display: flex;
 align-items: center;
+margin: 0;
+}
+
+.site-footer-socials li {
+margin-right: 16px;
+}
+
+.site-footer-socials li:last-child {
+margin-right: 0;
 }
 
 .site-footer-socials a {
@@ -234,6 +282,8 @@ color: #FF7500;
  background-color: rgba(37, 36, 32, 0.5);
  border: 0;
  height: 2px;
+ margin-top: 40px;
+ margin-bottom: 64px;
 }
 
 .site-footer-bottom {
@@ -242,7 +292,15 @@ display: flex;
 
 .site-footer-links {
   width: 224px;
+  padding: 0;
+  margin: 0;
+  margin-right: 68px;
+  list-style: none;
   line-height: 19px;
+}
+
+.site-footer-links:last-child {
+margin-right: 0;
 }
 
 .site-footer-links a {
