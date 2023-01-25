@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
@@ -9,15 +15,31 @@ body {
 outline: 2px dotted #FF7500;
 outline-offset: 3px;
 }
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 /* SITE-HEADER */
 .site-header{
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-top: 5px solid #FF7500;
   padding-top: 16px;
   padding-bottom: 16px;
+  }
+
+  .site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   }
 
   .logo-link {
@@ -103,15 +125,19 @@ transition: color 0.4s ease, opacity 0.4 ease;
 .hero{
   background-color: #252420;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .hero-content{
   width: 390px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .orange-line{
@@ -141,6 +167,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   width: 510px;
   height: 510px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 /* FEATURES */
@@ -187,22 +214,33 @@ transition: color 0.4s ease, opacity 0.4 ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 32px;
 }
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 12px;
  font-style: 24px;
  line-height: 1.2;
  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
+.feature-info {
+  margin: 0;
+}
 
 /* PROMO */
 .promo {
-  background-color: #252420;
-  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.promo-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 12px;
-  }
+  background-color: #252420;
+  padding: 64px;
+  color: #fff;
+}
 
 .promo-content {
   width: 440px;
@@ -306,6 +344,13 @@ display: flex;
   list-style: none;
   line-height: 19px;
 }
+.site-footer-links li {
+margin-bottom: 16px;
+}
+
+.site-footer-links li:last-child {
+  margin-bottom: 0;
+  }
 
 .site-footer-links:last-child {
 margin-right: 0;
