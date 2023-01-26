@@ -1,8 +1,18 @@
-* {
+html {
   box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -125,7 +135,6 @@ transition: color 0.4s ease, opacity 0.4 ease;
 .hero{
   background-color: #252420;
   color: #fff;
-
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -135,6 +144,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
 }
 
 .hero-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,6 +174,9 @@ transition: color 0.4s ease, opacity 0.4 ease;
   }
 
  .hero-img{
+  position: absolute;
+  right: 20px;
+  top: -40px;
   width: 510px;
   height: 510px;
   border-radius: 8px;
@@ -223,6 +236,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
  line-height: 1.2;
  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
+
 .feature-info {
   margin: 0;
 }
@@ -240,6 +254,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   background-color: #252420;
   padding: 64px;
   color: #fff;
+  position: relative;
 }
 
 .promo-content {
@@ -270,6 +285,9 @@ transition: color 0.4s ease, opacity 0.4 ease;
   color: #FF7500;
 }
 .promo-img {
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
   width: 440px;
   height: 440px;
   object-fit: cover;
@@ -298,6 +316,7 @@ justify-content: space-between;
 display: flex;
 align-items: center;
 margin: 0;
+padding: 0;
 }
 
 .site-footer-socials svg {
