@@ -1,3 +1,12 @@
+:root {
+ --accent-color: #FF7500;
+
+ --text-font: "Roboto", "Arial", sans-serif;
+
+ --heading-font: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+}
+
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -17,12 +26,13 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--text-font);
+  color: #000;
   letter-spacing: 0.5px;
 }
 
 *:focus {
-outline: 2px dotted #FF7500;
+outline: 2px dotted var(--accent-color);
 outline-offset: 3px;
 }
 
@@ -41,7 +51,7 @@ outline-offset: 3px;
 /* SITE-HEADER */
 .site-header{
   background-color: #fff;
-  border-top: 5px solid #FF7500;
+  border-top: 5px solid var(--accent-color);
   padding-top: 16px;
   padding-bottom: 16px;
   }
@@ -102,7 +112,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
 }
 
 .sitenav-link:hover {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 
 .sitenav-link:active {
@@ -118,7 +128,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   font-weight: bold;
   line-height: 15px;
   color: #fff;
-  background-color: #FF7500;
+  background-color: var(--accent-color);
   text-decoration: none;
   transition: opacity 0.4s ease;
 }
@@ -154,7 +164,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   width: 80px;
   height: 3px;
   border: 0;
-  background-color: #ff7500;
+  background-color: var(--accent-color);
   margin: 0;
   margin-bottom: 40px;
   }
@@ -164,7 +174,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
     margin-bottom: 24px;
     font-size: 40px;
     line-height: 1.2;
-    font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+    font-family: var(--heading-font);
     }
 
   .hero-text {
@@ -206,7 +216,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   font-size: 72px;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--heading-font);
 }
 
 /* FEATURE */
@@ -234,7 +244,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   margin-bottom: 12px;
  font-style: 24px;
  line-height: 1.2;
- font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+ font-family: var(--heading-font);
 }
 
 .feature-info {
@@ -265,7 +275,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
   margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--heading-font);
 }
 
 .promo-info-wrapper {
@@ -282,7 +292,7 @@ transition: color 0.4s ease, opacity 0.4 ease;
 }
 
 .promo-highlight {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 .promo-img {
   position: absolute;
@@ -337,7 +347,7 @@ margin-right: 0;
 
 }
 .site-footer-socials a:hover {
-color: #FF7500;
+color: var(--accent-color);
 }
 .site-footer-socials a:active {
   opacity: 0.6;
@@ -381,7 +391,7 @@ margin-right: 0;
 }
 
 .site-footer-links a:hover {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 
 .site-footer-links a:active {
